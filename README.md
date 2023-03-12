@@ -8,7 +8,7 @@ Interface between Arduino board and program was achieved with ***SerialPort.js**
 
 ## How program works
 > **Warning**
-> [Orange text] Before running the program, make sure to plug Your Arduino board first!
+> Before running the program, make sure to plug Your Arduino board first!
 
 When Program loads, You should see `Port` name in right top corner.
 If You don't see it, rerun the program.
