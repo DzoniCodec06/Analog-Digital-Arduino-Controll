@@ -7,7 +7,7 @@ For creating desktop window, I was using ***Electron.js***, and standard **Web**
 Interface between Arduino board and program was achieved with ***SerialPort.js***. Module that allows us to **send** or **read** **serial data** from PC and Arudino board. Everything was phisicly connected *via USB cable*.
 
 ## How program works
-> **Warning**
+> **Warning** <br />
 > Before running the program, make sure to plug Your Arduino board first!
 
 When Program loads, You should see `Port` name in right top corner. <br />
