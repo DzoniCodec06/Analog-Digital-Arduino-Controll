@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E2E2E2;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tilt Neon', cursive;
+}
+
+header {
+    width: auto;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11);
+    background-color: #fff;
+    font-family: 'Tilt Neon', cursive;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+.port-name {
+    padding: 10px 10px;
+    width: 18vw;
+    background-color: #EFEFEF;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.port-name i {
+    font-size: 25px;
+}
+
+.port-name h3 {
+    font-weight: lighter;
+}
+
+.pin-selection, .pin-state {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+.pin-selection h1, .pin-state h1 {
+    margin-top: 20px;
+    padding-block: 15px;
+    width: 60vw;
+    font-weight: lighter;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.selection, .digital-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 10px;
+    width: 50vw;
+    height: fit-content;
+}
+
+.analog-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    margin-block: 20px;
+}
+
+.analog-bar h3 {
+    text-align: center;
+}
+
+.selection h3, .analog-bar h3, .digital-bar h3 {
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+#digital-st {
+    width: 50px;
+    text-align: left;
+}
+
+input[type="range"] {
+    margin-block: 15px;
+    -webkit-appearance: none;
+    width: 90%;
+    height: 10px;
+    background-color: #494949;
+    outline: none;
+    transition: all ease-in 0.1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 25px;
+    border-radius: 0; 
+    background: #7C7C7C;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="range"]:hover {
+    background-color: #636363;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.switch input:checked + .slider {
+    background-color: #02bb58;
+}
+  
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #02bb58;
+}
+  
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+}
+
+.value #val {
+    margin-left: 15px;
+}
+
+select {
+    width: 80px;
+    height: 30px;
+    font-size: large;
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+

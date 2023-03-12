@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Analog Arduino controll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Controll Arduino PWM Outputs</h1>
+        <div class="port-name">
+            <i class="fa-brands fa-usb"></i>
+            <h3 id="port-path"></h3>
+        </div>
+    </header>
+    <div class="pin-selection">
+        <h1>Pin selection</h1>
+        <div class="selection">
+            <h3>Select pin: </h3>
+            <label for="pin"></label>
+            <select name="pin" id="pin-num">
+                <option value="none">none</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+        </div>
+        <div class="selection">
+            <h3>Pin direction: </h3>
+            <label for="dir"></label>
+            <select name="dir" id="direction">
+                <option value="ON">OUT</option>
+                <option value="OFF">IN</option>
+            </select>
+        </div>
+    </div>
+    <div class="pin-state">
+        <h1>Pin state</h1>
+        <div class="analog-bar">
+            <div class="value">
+                <h3>Analog value:  </h3>
+                <h3 id="val"></h3>
+            </div>
+            <input type="range" min="0" max="255" value="100" id="analog-value">
+        </div>
+        <div class="digital-bar">
+            <h3>Pin state: </h3>
+            <label class="switch">
+                <input type="checkbox" id="digital">
+                <span class="slider round"></span>
+            </label>
+            <h3 id="digital-st">OFF</h3>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
