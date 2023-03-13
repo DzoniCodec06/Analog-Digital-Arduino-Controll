@@ -26,3 +26,10 @@ Here You can see **analog bar** and It's value.<br />
 With that you can send analog data between **0** and **255**.<br />
 
 Or You can just click on **toggle button** to toggle *HIGH* or *LOW* state.
+
+## Images
+### Main Window
+![Slika 1](https://user-images.githubusercontent.com/60019990/224680986-32ccea2e-6383-4dd4-95bd-70671f1bb871.png)
+
+### Console Window
+![Slika Console](https://user-images.githubusercontent.com/60019990/224681030-868525f2-f3ac-42cb-9bcc-382f95d1c2bc.png)
